@@ -560,8 +560,8 @@ class Rice:
             for region_id in range(self.num_regions)
         ]
         
-        print(m1_all_regions, "Test 2022-12-08 13:59")
-    
+        print(m1_all_regions, "Test 2022-12-08 17:50")
+
 
         m2_all_regions = [
             actions[region_id][
