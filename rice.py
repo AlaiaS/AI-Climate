@@ -559,9 +559,6 @@ class Rice:
             / self.num_discrete_action_levels
             for region_id in range(self.num_regions)
         ]
-        
-        print(m1_all_regions, "Test 2022-12-08 17:50")
-
 
         m2_all_regions = [
             actions[region_id][
@@ -570,6 +567,7 @@ class Rice:
             / self.num_discrete_action_levels
             for region_id in range(self.num_regions)
         ]
+        print(m2_all_regions, "Test 2022-12-08 18:35")
 
         self.set_global_state(
             "promised_mitigation_rate", np.array(m1_all_regions), self.timestep
