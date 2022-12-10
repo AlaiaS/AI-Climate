@@ -43,6 +43,8 @@ from rice_helpers import (
     set_rice_params,
 )
 
+print(get_abatement_cost,"Test 2022-12-10 10:41")
+
 # Set logger level e.g., DEBUG, INFO, WARNING, ERROR.
 logging.getLogger().setLevel(logging.ERROR)
 
@@ -139,6 +141,7 @@ class Rice:
             + self.import_actions_nvec
             + self.tariff_actions_nvec
         )
+
 
         # Negotiation-related initializations
         if self.negotiation_on:
@@ -567,7 +570,6 @@ class Rice:
             / self.num_discrete_action_levels
             for region_id in range(self.num_regions)
         ]
-        print(m2_all_regions, "Test 2022-12-08 18:35")
 
         self.set_global_state(
             "promised_mitigation_rate", np.array(m1_all_regions), self.timestep
