@@ -43,8 +43,6 @@ from rice_helpers import (
     set_rice_params,
 )
 
-print(get_abatement_cost,"Test 2022-12-10 10:41")
-
 # Set logger level e.g., DEBUG, INFO, WARNING, ERROR.
 logging.getLogger().setLevel(logging.ERROR)
 
@@ -562,6 +560,8 @@ class Rice:
             / self.num_discrete_action_levels
             for region_id in range(self.num_regions)
         ]
+
+        print(m1_all_regions,"Test 2022-12-10 11:14")
 
         m2_all_regions = [
             actions[region_id][
