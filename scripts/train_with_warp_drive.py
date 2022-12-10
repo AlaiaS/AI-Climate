@@ -188,6 +188,7 @@ def trainer(
     """
     # Load the run_config
     print("Training with WarpDrive...")
+    print(desired_outputs,"Test 2022-12-10 11:53")
 
     # Read the run configurations specific to the environment.
     # Note: The run config yaml(s) can be edited at warp_drive/training/run_configs
