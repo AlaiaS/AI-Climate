@@ -393,6 +393,7 @@ class Rice:
             "global_land_emissions",
             "timestep",
         ]
+        print(global_features,"Test 2022-12-10 11:31")
 
         # Public features that are observable by all regions
         public_features = [
@@ -532,6 +533,7 @@ class Rice:
             mask_dict[region_id] = mask
 
         return mask_dict
+
 
     def proposal_step(self, actions=None):
         """
