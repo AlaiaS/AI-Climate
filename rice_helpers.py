@@ -40,8 +40,11 @@ def set_rice_params(yamls_folder=None):
     for file in yaml_files:
         rice_params.append(read_yaml_data(os.path.join(yamls_folder, file)))
 
+    rice_params = rice_params[:2]
+
     # Overwrite rice params
-    num_regions = len(rice_params)
+    num_regions = len(rice_params) 
+    print(num_regions,"No. of regions 2022-12-10")
     for k in dice_params["_RICE_CONSTANT"].keys():
         dice_params["_RICE_CONSTANT"][k] = [
             dice_params["_RICE_CONSTANT"][k]
