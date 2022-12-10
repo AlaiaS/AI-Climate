@@ -42,6 +42,7 @@ from rice_helpers import (
     get_utility,
     set_rice_params,
 )
+print()
 
 # Set logger level e.g., DEBUG, INFO, WARNING, ERROR.
 logging.getLogger().setLevel(logging.ERROR)
@@ -422,6 +423,7 @@ class Rice:
             "social_welfare_all_regions",
             "reward_all_regions",
         ]
+        print("production_factor_all_regions","Test 2022-12-10 12:08")
 
         # Features concerning two regions
         bilateral_features = []
