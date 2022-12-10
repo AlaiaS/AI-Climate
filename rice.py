@@ -394,7 +394,7 @@ class Rice:
             "global_land_emissions",
             "timestep",
         ]
-        print(global_features,"Test 2022-12-10 11:31")
+        print(global_features,"Test 2022-12-10 11:31",self.timestep)
 
         # Public features that are observable by all regions
         public_features = [
